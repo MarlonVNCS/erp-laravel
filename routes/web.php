@@ -3,9 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('auth')->group(function () {
+    Route::get('/', function () { return view('main'); })->name('home');
+    Route::get('inserirNF', function () { return view('nf/insert'); })->name('nf.insert');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
