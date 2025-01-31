@@ -7,7 +7,7 @@ Repositório base: https://github.com/especializati/setup-docker-laravel.git
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone -b laravel-11-with-php-8.3 https://github.com/MarlonVNCS/erp-laravel erp-laravel
+git clone -b main https://github.com/MarlonVNCS/erp-laravel erp-laravel
 ```
 ```sh
 cd erp-laravel
