@@ -49,6 +49,7 @@ services:
         image: phpmyadmin/phpmyadmin
         platform: linux/x86_64
         restart: unless-stopped
+        command: --innodb-buffer-pool-size=512M --max-connections=100 --query-cache-size=64M
         ports:
             - "8080:80"
         environment:

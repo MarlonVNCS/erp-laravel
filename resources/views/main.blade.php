@@ -18,7 +18,7 @@
             Button 3
         </button>
     </div>
-    <form action="{{ route('nf.insert') }}" method="GET">
+    <form action="{{ route('insert') }}" method="GET">
         @csrf
         <button type="submit">Inserir NF</button>
     </form>
